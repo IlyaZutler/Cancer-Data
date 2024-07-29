@@ -1,29 +1,3 @@
-# import pandas as pd
-#
-# # Путь к вашему Excel-файлу
-# file_path = r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Airbnb_Berlin2.xlsx'
-#
-# # Чтение Excel-файла в DataFrame
-# try:
-#     # Если ваш файл в формате .xls, используйте engine='openpyxl'
-#     df = pd.read_excel(file_path, engine='openpyxl')
-#    apartments = df.drop(columns=['index', 'Review ID', 'review_date','Reviewer ID', 'Reviewer Name','Comments' ]).drop_duplicates()
-# apartments.head(1)
-#     # df = pd.read_excel(file_path, engine='openpyxl')
-#
-#     # Вывод первых нескольких строк DataFrame для проверки
-#     print(df.head())
-#
-# except FileNotFoundError as e:
-#     print(f"Файл не найден: {e}")
-# except PermissionError as e:
-#     print(f"Ошибка доступа: {e}")
-# except Exception as e:
-#     print(f"Произошла ошибка: {e}")
-#
-# print(df.shape)
-#
-
 import pandas as pd
 import pickle
 import os
