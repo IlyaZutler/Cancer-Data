@@ -19,7 +19,8 @@ def read_excel_with_cache(excel_path, cache_path):
 
 df = read_excel_with_cache(excel_file_path, cache_file_path)
 
-df = df['Price'].str.replace('$', '').str.replace(',', '').astype(float)
+df['Price'] = df['Price'].str.replace('$', '').str.replace(',', '').astype(float)
+df['Postal Code'] = df['Postal Code'].str.replace('.0', '').astype(str)
 apartments = df.drop(columns=['index', 'Review ID', 'review_date','Reviewer ID', 'Reviewer Name','Comments' ]).drop_duplicates()
 
 apartments.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\apartments.xlsx', index=False)
