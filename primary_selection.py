@@ -23,7 +23,7 @@ df['Price'] = df['Price'].str.replace('$', '').str.replace(',', '').astype(float
 df['Postal Code'] = df['Postal Code'].str.replace('.0', '').astype(str)
 apartments = df.drop(columns=['index', 'Review ID', 'review_date','Reviewer ID', 'Reviewer Name', 'Comments',
                               'Listing URL', 'Listing Name', 'Host ID', 'Host URL', 'Host Name',
-                              'Country Code', 'Country' ]).drop_duplicates()
+                              'Country Code', 'Country', 'Business Travel Ready']).drop_duplicates()
 
 apartments.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\apartments.xlsx', index=False)
 
