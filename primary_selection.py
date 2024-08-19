@@ -50,5 +50,5 @@ df_с.dropna(inplace=True)
 # df_с.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Comments.xlsx', index=False)
 
 df_с2 = df[['Listing ID', 'Comments']].copy()
-df_с.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Comments_full.xlsx')
+df_с2.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Comments_full.xlsx', index=False)
 
