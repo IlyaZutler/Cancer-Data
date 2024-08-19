@@ -47,4 +47,8 @@ df_с['Comments'] = df.apply(remove_host_name_from_comments, axis=1)
 df_с = df_с[df_с['Comments'].str.strip() != '']
 df_с.dropna(inplace=True)
 
-df_с.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Comments.xlsx', index=False)
+# df_с.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Comments.xlsx', index=False)
+
+df_с2 = df[['Listing ID', 'Comments']].copy()
+df_с.to_excel(r'C:\Users\domashniy\Documents\GitHub\Project_3-Airbnb\Comments_full.xlsx')
+
