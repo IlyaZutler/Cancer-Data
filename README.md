@@ -1,7 +1,7 @@
 # Data
 https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-measure-up
 
-The Berlin Airbnb Ratings dataframe is analyzed.
+The Berlin Airbnb Ratings dataframe is analyzed. 
 The dataframe contains 450k comments about 23.5k apartments.
 
 0. The original dataframe takes up 250 MB. Therefore, the dataframe is divided into two tables: Comments and Apartments, which take up 37 MB and 3.5 MB, respectively.
