@@ -21,3 +21,4 @@ The dataframe contains 450k comments about 23.5k apartments.
 
 Long-term accommodation offers for more than 14 days are rejected. Offers for accommodation in Apartment and Condominium and not Shared room are left.
 
+Outliers by Price accepted offers with accommodation prices less than 14 and more than 300 euros. Log data transformation was performed to calculate the boundaries.
