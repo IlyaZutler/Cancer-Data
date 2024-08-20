@@ -12,7 +12,7 @@ The dataframe contains 450k comments about 23.5k apartments.
 2. Data Protocol, Descriptive Statistics was created for Apartments. Visualization of missing data, numerical and categorical, was made. Cross-correlations, skewness for numerical data, and a t-test for price differences by city districts were calculated.
 
 3. Spatial Autocorrelation was calculated for Price and Location Rating data. Moran's I index and its p-value were calculated.
-A rough calculation on the plain requires N^2 operations. To reduce the complexity of calculations, the city is pre-divided into a grid.
+       A rough calculation on the plain requires N^2 operations. To reduce the complexity of calculations, the city is pre-divided into a grid.
 
 3. Visualization of word frequencies in comments. Price data is plotted on the city map - more and less expensive areas for accommodation are visible.
 4. Location Rating data is plotted on the city map - places that tourists rate as more and less comfortable are visible.
