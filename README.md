@@ -15,9 +15,7 @@ The dataframe contains 450k comments about 23.5k apartments.
 A rough calculation on the plain requires N^2 operations. To reduce the complexity of calculations, the city is pre-divided into a grid.
 
 3. Visualization of word frequencies in comments.
-
 Data on 'Price' is plotted on the city map - more and less expensive areas for accommodation are visible.
-
 4. Data on 'Location Rating' is plotted on the city map - places that tourists rated as more and less comfortable are visible.
 
 5. Missing values ​​in 'Post Code' are filled. The value is filled with the closest known value. Using a grid search speeds up the process.
