@@ -9,7 +9,7 @@ The dataframe contains 450k comments about 23.5k apartments.
 
 1. The Polarity of comments was analyzed. Aggregated data on the Polarity of comments was added to the Apartments table.
 
-2. Data Protocol, Descriptive Statistics was created for Apartments. Visualization of missing data, numerical and categorical, was made. Cross-correlations, skewness for numerical data, t-test of price differences by city districts were calculated.
+2. Data Protocol, Descriptive Statistics was created for Apartments. Visualization of missing data, numerical and categorical, was made. Cross-correlations, skewness for numerical data, ANOVA and t-test of price differences by city districts were calculated.
 
 3. Spatial Autocorrelation was calculated for the 'Price' and 'Location Rating' data. Moran's I index and its p-value were calculated.
 A rough calculation on the plain requires N^2 operations. To reduce the complexity of calculations, the city is pre-divided into a grid.
