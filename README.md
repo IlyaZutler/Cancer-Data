@@ -17,3 +17,8 @@ The dataframe contains 450k comments about 23.5k apartments.
 3. Visualization of word frequencies in comments. Price data is plotted on the city map - more and less expensive areas for accommodation are visible.
 4. Location Rating data is plotted on the city map - places that tourists rate as more and less comfortable are visible.
 
+5. Missing values ​​in Post Code are filled. The value is filled with the closest known value. Using grid search speeds up the process.
+
+Long-term accommodation offers for more than 14 days are rejected. Offers for accommodation in Apartment and Condominium and not Shared room are left.
+
+Outliers by Price accepted offers with accommodation prices less than 14 and more than 300 euros. Log data transformation was performed to calculate the boundaries.
