@@ -10,9 +10,7 @@ https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-me
 3. Spatial Autocorrelation was calculated for the 'Price' and 'Location Rating' data. Moran's I index and its p-value were calculated.
 A rough calculation on the plain requires N^2 operations. To reduce the complexity of calculations, the city is pre-divided into a grid.
 
-4. Visualization of word frequencies in comments.
-
-    Data on 'Price' is plotted on the city map - more and less expensive areas for accommodation are visible.
+4. Visualization of word frequencies in comments. Data on 'Price' is plotted on the city map - more and less expensive areas for accommodation are visible.
 
 5. Data on 'Location Rating' is plotted on the city map - places that tourists rated as more and less comfortable are visible.
 
