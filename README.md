@@ -17,10 +17,13 @@ A rough calculation on the plain requires N^2 operations. To reduce the complexi
 5. Data on 'Location Rating' is plotted on the city map - places that tourists rated as more and less comfortable are visible.
 
 6. Missing values ​​in 'Post Code' are filled. The value is filled with the closest known value. Using a grid search speeds up the process.
-Rejected offers for long-term accommodation over 14 days. Retained offers for accommodation in (Apartment and Condominium and) not Shared room.
+Rejected offers for long-term accommodation over 14 days and accommodation in Shared room.
 
     Outliers by 'Price' accepted offers with a price of less than 14 and more than 300 euros. Log transformation of the data was performed to calculate the boundaries.
 
-    Feature Engineering included Log transformation for features with a distribution with heavy tails. A new feature was introduced - distance from the city center. One-Hot Encoding was made for the 'Neighborhood Group' feature. The more detailed 'neighbourhood' feature was not changed. Target Encoding will be used for it.
+    Feature Engineering included Log transformation for features with a distribution with heavy tails. A new feature was introduced - distance from the city center.
+   
+   Method Selection. One-Hot Encoding was made for the 'Neighborhood Group' feature. The more detailed 'neighbourhood' feature was not changed. Target Encoding will be used for it.
 
-   Method Selection
+
+   
