@@ -1,13 +1,9 @@
-# Data
+# Berlin Airbnb Ratings
 https://www.kaggle.com/datasets/thedevastator/berlin-airbnb-ratings-how-hosts-measure-up
+ 
+0. The dataframe contains 450k comments about 23.5k apartments and takes up 250 MB. Therefore, the dataframe is divided into two tables: Comments and Apartments, which take up 37 MB and 3.5 MB respectively.
 
-The Berlin Airbnb Ratings dataframe is analyzed. 
-
-The dataframe contains 450k comments about 23.5k apartments.
-
-0. The original dataframe takes up 250 MB. Therefore, the dataframe is divided into two tables: Comments and Apartments, which take up 37 MB and 3.5 MB respectively.
-
-1. The Polarity of comments was analyzed. Aggregated data on the Polarity of comments was added to the Apartments table. The quality of processing of comments is, unfortunately, very disappointing.
+1. The Polarity of comments was analyzed. Aggregated data on the Polarity of comments was added to the Apartments table. The quality of processing of comments, unfortunately, is very disappointing.
 
 2. Data Protocol, Descriptive Statistics was created for Apartments. Visualization of missing data, numerical and categorical, was made. Cross-correlations, skewness for numerical data, ANOVA and t-test of price differences by city districts were calculated.
 
