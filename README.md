@@ -21,7 +21,14 @@ Rejected offers for long-term accommodation over 14 days and accommodation in Sh
 
     Feature Engineering included Log transformation for features with a distribution with heavy tails. A new feature was introduced - distance from the city center.
    
-   Method Selection. One-Hot Encoding was made for the 'Neighborhood Group' feature. The more detailed 'neighbourhood' feature was not changed. Target Encoding will be used for it.
+7. Were tested the following regression models in basic settings: Lasso, Random Forest, CatBoost, LightGBM, XGBoost for two types of encoding: One-Hot Encoding and Target Encoding (in fact, CatBoost and LightGBM do not require preprocessing of categorical features - they do Target Encoding themselves).
+CatBoost has shown that it is the best out-of-the-box solution, shows good results without manual settings.
+
+	For each model and encoding method, feature importances were ranked (for One-Hot sums of the importances of derived features). And belt the correlation matrix of feature importance ranks. It is clear that Lasso ranks features differently from other models that give good results. In this case, Lasso is poorly suited for feature selection. Lasso is a linear regression model and gives poor results in the case of nonlinear dependencies. 
+   
+9. Fine Tuning with Cross-Validation were made for CatBoost and XGBoost.
+    Features were divided into three groups: location-related, apartment-related, and hospitality-related. Our models assigned importance to the features in these groups in completely different ways.
+
 
 
    
